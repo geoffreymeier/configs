@@ -1,0 +1,9 @@
+*
+!*/
+!*.config
+!*.el
+!*.vim
+!*.yml
+!*.cfg
+!*/xmonad.hs
+!.gitignore
