@@ -7,3 +7,6 @@
 !*.cfg
 !*/xmonad.hs
 !.gitignore
+!.bashrc
+!.bash_config
+

@@ -1,0 +1,27 @@
+### ALIASES ###
+
+alias vim='nvim'
+alias pbcopy='xclip -selection c'
+alias pbpaste='xclip -selection clipboard -o'
+alias spotify='ncspot'
+alias grep='rg'
+alias rm="echo \"This is not the trash you're looking for...\""
+
+
+### EXPORTS ###
+export EDITOR=nvim
+export PATH
+export PATH=$PATH:/home/geoffreymeier/.emacs.d/bin
+export PATH=$PATH:/home/geoffreymeier/bin
+export PATH=$PATH:/home/geoffreymeier/.local/bin
+export PATH=$PATH:/opt/cisco/anyconnect/bin # Boise State VPN
+
+### PS1 ###
+if [ "$TERM" != "linux" ] 
+then
+    export PS1='\[$(tput bold)\]\[$(tput setaf 3)\]/\[$(tput setaf 2)\]\u:\[$(tput setaf 4)\]\W\[$(tput setaf 3)\]/\[$(tput setaf 6)\]$(__git_ps1 "(%s)")\[$(tput sgr0)\] \$ '
+fi
+
+### OTHER ###
+shopt -s autocd	#enable automatic cd (don't need to type 'cd' to change directories
+cornyjokes #run cornyjokes each time the terminal is started
